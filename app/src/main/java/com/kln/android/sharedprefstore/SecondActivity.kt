@@ -21,7 +21,7 @@ class SecondActivity : AppCompatActivity() {
         preferences = getSharedPreferences("SHARED_PREFS", Context.MODE_PRIVATE)
 
         val name = preferences.getString("NAME", "")
-        binding.textviewName.text = name
+        binding.textviewName.text = "$name!"
         val email = preferences.getString("EMAIL", "")
         binding.textviewEmail.text = email
 
